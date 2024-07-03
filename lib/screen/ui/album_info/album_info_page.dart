@@ -23,9 +23,15 @@ class AlbumInfoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      appBar: AppBar(
-        title: const Text("Daily New Releases"),
-      ),
+      appBar: AppBar(title: const Text("Daily New Releases"), actions: [
+        IconButton(
+          onPressed: () {
+            _model.deleteAlbum(artist, album);
+            Navigator.of(context).pop();
+          },
+          icon: const Icon(Icons.delete),
+        ),
+      ]),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,

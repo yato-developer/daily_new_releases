@@ -1,7 +1,7 @@
 import 'package:daily_new_releases/firebase/firebase_options.dart';
 import 'package:daily_new_releases/screen/theme/theme.dart';
-import 'package:daily_new_releases/update/feature/top_page.dart';
-import 'package:daily_new_releases/update/feature/util/shared_preferences/shared_preferences_repository.dart';
+import 'package:daily_new_releases/force_update/feature/top_page.dart';
+import 'package:daily_new_releases/force_update/feature/util/shared_preferences/shared_preferences_repository.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
